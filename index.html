@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KenShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap"><div id="page">
+
+<!-- HOME -->
+<section id="home">
+  <img class="logo" src="images/logo.png" alt="KenShop logo">
+  <nav><a data-go="home">Home</a><a data-go="shop">Shop</a><a data-go="about">About</a><a data-go="contact">Contact</a></nav>
+  <div class="t" style="left:220px;top:44px;font-size:12.5px;line-height:15px">Welcome to<br>KenShop<br>clothing<br>Your one-stop shop for your<br>everyday needs</div>
+  <button class="btn" id="shopNow" style="left:220px;top:139px;width:71px;height:18px;font-size:10.5px">Shop Now</button>
+  <img id="hero" class="abs" src="images/hero.jpg" alt="Clothes on a rack">
+  <div class="prod" style="left:41px;top:172px"><img src="images/h1.jpg" alt="abt apparel"><div class="n">abt apparel</div><div class="p">₱299</div></div>
+  <div class="prod" style="left:176px;top:172px"><img src="images/h2.jpg" alt="abt pro club"><div class="n">abt pro club</div><div class="p">₱299</div></div>
+  <div class="prod" style="left:309px;top:172px"><img src="images/h3.jpg" alt="legalize"><div class="n">legalize</div><div class="p">₱299</div></div>
+  <div class="prod" style="left:441px;top:172px"><img src="images/h4.jpg" alt="crop shirt"><div class="n">crop shirt</div><div class="p">₱299</div></div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <img class="logo" src="images/logo.png" alt="KenShop logo">
+  <nav><a data-go="home">Home</a><a data-go="shop">Shop</a><a data-go="about">About</a><a data-go="contact">Contact</a></nav>
+  <input id="search" type="text" placeholder="Search" autocomplete="off">
+  <div class="t" style="left:41px;top:123px;font-size:13px;line-height:16px">Shop</div>
+  <div class="t" style="left:41px;top:139px;font-size:9px;line-height:11px">Browse our latest products and what you needs</div>
+  <div class="t" style="left:41px;top:169px;font-size:13px;line-height:16px">Categories</div>
+  <button class="cat on" data-c="all" style="top:194px">All</button>
+  <button class="cat" data-c="abt apparel" style="top:217px">abt apparel</button>
+  <button class="cat" data-c="abt pro club" style="top:239px">abt pro club</button>
+  <button class="cat" data-c="legalize" style="top:262px">legalize</button>
+  <button class="cat" data-c="crop shirt" style="top:285px">crop shirt</button>
+  <button class="cat" data-c="hassuru shirt" style="top:307px">hassuru shirt</button>
+  <div id="grid"></div>
+  <div id="empty">No products found.</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <img class="logo" src="images/logo.png" alt="KenShop logo" style="left:60px;top:55px">
+  <nav><a data-go="home">Home</a><a data-go="shop">Shop</a><a data-go="about">About</a><a data-go="contact">Contact</a></nav>
+  <img class="abs" src="images/about.jpg" alt="Clothes" style="left:41px;top:147px;width:496px;height:191px;object-fit:cover">
+  <div class="t" style="left:574px;top:159px;font-size:11.5px;line-height:15px">kenShop is a simple and modern online store<br>that offers quality products at affordable prices.<br>we aim to make your shopping experience<br>easy, fast, and enjoyable.</div>
+  <div class="feat" style="left:188px;top:451px"><img src="images/truck.png" alt="Fast delivery" style="width:50px;height:38px;margin-bottom:8px">Fast Delivery<br>Get your order<br>on time</div>
+  <div class="feat" style="left:578px;top:449px"><img src="images/card.png" alt="Secure payment" style="width:62px;height:49px;margin-bottom:4px;margin-left:36px">Secure Payment<br>shop with confidence</div>
+  <div class="feat" style="left:928px;top:451px"><img src="images/hand.png" alt="Safe parcel" style="width:62px;height:46px;margin-bottom:6px">Safe your parcel</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <img class="logo" src="images/logo.png" alt="KenShop logo">
+  <nav><a data-go="home">Home</a><a data-go="shop">Shop</a><a data-go="about">About</a><a data-go="contact">Contact</a></nav>
+  <div class="t lbl" style="left:45px;top:121px">Get in Touch</div>
+  <div class="t sm" style="left:45px;top:137px;font-size:10px;line-height:15px">Have a question or need help?<br>Feel free to reach out to us.</div>
+  <img class="abs" src="images/pin.png" alt="" style="left:44px;top:179px;width:28px;height:37px">
+  <div class="t lbl" style="left:84px;top:192px">Our Address</div>
+  <div class="t sm" style="left:84px;top:207px">123 Ken Street City Philippines</div>
+  <div class="t lbl" style="left:84px;top:242px">Email Us</div>
+  <div class="t sm" style="left:84px;top:257px">kenshop@email.com</div>
+  <div class="t lbl" style="left:84px;top:305px">Call Us</div>
+  <div class="t sm" style="left:84px;top:320px">+63 912 345 6789</div>
+  <form id="panel" novalidate>
+    <div class="t lbl" style="left:31px;top:23px;font-size:12.5px">Send us a Message</div>
+    <input id="fn" type="text" placeholder="Name" style="top:67px">
+    <input id="fe" type="email" placeholder="Email" style="top:115px">
+    <textarea id="fm" placeholder="Message" style="top:162px"></textarea>
+    <button type="submit" style="top:354px">Send Message</button>
+  </form>
+</section>
+
+</div></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
